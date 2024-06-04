@@ -1,0 +1,79 @@
+body {
+    background-color: #151515;
+    color: whitesmoke;
+}
+
+#section1 {
+    background: linear-gradient(#f5f5f5,#cacaca);
+    color: #151515;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 2fr 4fr 2fr;
+    overflow: visible;
+}
+
+#section1-header {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.s1-recycle-symbol {
+    grid-area: 1 / 1 / 3 / 3;
+    position: relative;
+    opacity: 75%;
+    filter: blur(0.5rem) invert(25%) sepia(200%);
+    width: 20vw;
+    z-index: 2;
+}
+
+#section2 {
+    background: linear-gradient(#cacaca 15%,#151515,black,#cacaca);
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.25fr 0.4fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+}
+
+#section2-bg {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#151515,black 95%,#cacaca);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,1) 15%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,1) 15%);
+    position: relative;
+    pointer-events: none;
+    z-index: 3;
+}
+
+#section2-header {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 3vw;
+    z-index: 3;
+    background: radial-gradient(white, lightgrey);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section2-p {
+    grid-area: 3 / 2 / 3 / 3;
+    font-size: 3vw;
+    z-index: 3;
+    background: radial-gradient(white, lightgrey);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section3 {
+    background: linear-gradient(#cacaca,#f5f5f5);
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.25fr 0.4fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+}

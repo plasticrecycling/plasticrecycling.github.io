@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Types of Plastic</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/types.css">
+    <link rel="shortcut icon" href="img/Bottle.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Itim&display=swap" rel="stylesheet">
+</head>
+<body onresize="document.body.style.zoom = Math.round(window.devicePixelRatio * 80) + '%'; window.localStorage.setItem('recycle-scroll', this.scrollTop);" onload="document.getElementById('container').scrollTo({top: window.localStorage.getItem('recycle-scroll'),left: 0,behavior: 'instant',});">
+    <div id="container" onscroll="window.localStorage.setItem('recycle-scroll', this.scrollTop); setScroll()">
+        <dialog open id="section0">
+            <h1 id="loading-wheel" class="inter-700">↻</h1>
+            <noscript id="js-warn" class="inter-700">Please enable javascript to continue</noscript>
+        </dialog>
+        <div id="section-handle">
+            <div onclick="document.getElementById('section1').scrollIntoView({behavior: 'smooth'});"></div>
+            <div onclick="document.getElementById('section2').scrollIntoView({behavior: 'smooth'});"></div>
+            <div onclick="document.getElementById('section3').scrollIntoView({behavior: 'smooth'});"></div>
+            <div onclick="document.getElementById('section4').scrollIntoView({behavior: 'smooth'});"></div>
+            <div onclick="document.getElementById('section5').scrollIntoView({behavior: 'smooth'});"></div>
+            <div onclick="document.getElementById('section6').scrollIntoView({behavior: 'smooth'});"></div>
+            <div onclick="document.getElementById('section7').scrollIntoView({behavior: 'smooth'});"></div>
+            <div onclick="document.getElementById('section8').scrollIntoView({behavior: 'smooth'});"></div>
+            <div onclick="document.getElementById('section9').scrollIntoView({behavior: 'smooth'});"></div>
+            <div onclick="document.getElementById('section10').scrollIntoView({behavior: 'smooth'});"></div>
+        </div>
+        <section class="section" id="section1">
+            <div id="section1-header">
+                <h1 class="inter-700">You can recycle 1, 2 and 5.</h1>
+                <h2 class="itim-regular">but what does that mean?</h2>
+            </div>
+            <img class="s1-recycle-symbol" src="img/1_PET.svg" draggable="false" style="top: 20vh; left: 0; rotate: -30deg;">
+            <img class="s1-recycle-symbol" src="img/2_HDPE.svg" draggable="false" style="top: 10vh; left: 85vw; rotate: 45deg;">
+            <img class="s1-recycle-symbol" src="img/3_PVC.svg" draggable="false" style="bottom: 20vh; left: 60vw; rotate: 215deg;">
+            <img class="s1-recycle-symbol" src="img/4_LDPE.svg" draggable="false" style="top: 60vh; left: 65vw; rotate: 15deg;">
+            <img class="s1-recycle-symbol" src="img/5_PP.svg" draggable="false" style="top: 70vh; left: 20vw; rotate: 160deg;">
+            <img class="s1-recycle-symbol" src="img/6_PS.svg" draggable="false" style="top: 45vh; left: 40vw; rotate: 300deg;">
+            <img class="s1-recycle-symbol" src="img/7_Other.svg" draggable="false" style="bottom: 25vh; left: 20vw; rotate: 50deg;">
+        </section>
+        <div style="width: 0; height: 0;">
+            <div id="section2-bg"></div>
+        </div>
+        <section class="section" id="section2">
+            <h1 id="section2-header" class="inter-700">There are <span class="text-new-grad">7</span> main plastic types.</h1>
+            <h2 id="section2-p" class="inter-700">Each of them are made in <span class="text-blue-grad">different</span> ways<br>and are <span class="text-green-grad">recycled</span> differently, <span class="text-red-grad">if at all</span>.<br><br>One thing is for <span class="text-green-grad">certain</span>, all types of plastic<br>use <span class="text-red-grad">some sort of oil</span> to be produced.</h2>
+        </section>
+        <section class="section" id="section3">
+
+        </section>
+        <script src="scripts/script.js"></script>
+    </div>
+</body>
+</html>
