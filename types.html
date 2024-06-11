@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Itim&display=swap" rel="stylesheet">
 </head>
-<body onresize="document.body.style.zoom = Math.round(window.devicePixelRatio * 80) + '%'; window.localStorage.setItem('recycle-scroll', this.scrollTop);" onload="document.getElementById('container').scrollTo({top: window.localStorage.getItem('recycle-scroll'),left: 0,behavior: 'instant',});">
+<body onresize="document.body.style.zoom = Math.round(window.devicePixelRatio * 80) + '%';" onload="if(window.location.pathname.split('/')[window.location.pathname.split('/').length-1] == window.localStorage.getItem('prevPage')){document.getElementById('container').scrollTo({top: window.localStorage.getItem('recycle-scroll'),left: 0,behavior: 'instant',})};">
     <div id="container" onscroll="window.localStorage.setItem('recycle-scroll', this.scrollTop); setScroll()">
         <dialog open id="section0">
             <h1 id="loading-wheel" class="inter-700">↻</h1>

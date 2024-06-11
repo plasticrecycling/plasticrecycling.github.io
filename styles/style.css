@@ -234,6 +234,12 @@ svg {
     z-index: 10;
     transition: background-color 200ms ease-out;
     isolation: isolate;
+    mix-blend-mode: difference;
+}
+
+#section-handle div:first-child {
+     background-color: green;
+    mix-blend-mode: normal;
 }
 
 @keyframes scale {
