@@ -122,6 +122,7 @@ svg {
 
 .text-white {
     color: whitesmoke;
+    text-decoration-color: whitesmoke;
 }
 
 .text-white-grad {
@@ -134,18 +135,20 @@ svg {
 
 .text-red {
     color: red;
+    text-decoration-color: red;
 }
 
 .text-red-grad {
     background: linear-gradient(orangered, red);
     -webkit-background-clip: text;
     background-clip: text;
-    text-decoration-color: red;
     -webkit-text-fill-color: transparent;
+    text-decoration-color: red;
 }
 
 .text-green {
     color: limegreen;
+    text-decoration-color: limegreen;
 }
 
 .text-green-grad {
@@ -158,6 +161,7 @@ svg {
 
 .text-blue {
     color: dodgerblue;
+    text-decoration-color: dodgerblue;
 }
 
 .text-blue-grad {
@@ -170,6 +174,7 @@ svg {
 
 .text-grey {
     color: darkgrey;
+    text-decoration-color: darkgrey;
 }
 
 .text-grey-grad {
@@ -180,9 +185,9 @@ svg {
     text-decoration-color: darkgrey;
 }
 
-
 .text-old {
     color: #bf9460;
+    text-decoration-color: #bf9460;
 }
 
 .text-old-grad {
@@ -195,6 +200,7 @@ svg {
 
 .text-new {
     color: goldenrod;
+    text-decoration-color: goldenrod;
 }
 
 .text-new-grad {
