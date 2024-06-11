@@ -1,3 +1,9 @@
+if (window.innerWidth/100 > window.innerHeight/100) {
+    document.querySelector(':root').style.setProperty('--imgScale',window.innerWidth/100+"px");
+} else {
+    document.querySelector(':root').style.setProperty('--imgScale',window.innerHeight/100+"px");
+}
+
 document.body.style.zoom = Math.round(window.devicePixelRatio * 80) + '%';
 
 const delay = ms => new Promise(res => setTimeout(res, ms));

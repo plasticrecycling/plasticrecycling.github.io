@@ -35,14 +35,15 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     text-align: center;
+    scroll-snap-align: start;
 }
 
 #section2-bg {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(#151515,black 95%,#cacaca);
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,1) 15%);
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,1) 15%);
+    background: linear-gradient(#151515,black);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,1) 15%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,1) 15%);
     position: relative;
     pointer-events: none;
     z-index: 3;
@@ -69,11 +70,275 @@ body {
 }
 
 #section3 {
-    background: linear-gradient(#cacaca,#f5f5f5);
+    background: linear-gradient(#151515, black);
     display: grid;
-    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-columns: 0.1fr 0fr 1fr 0.1fr;
     grid-template-rows: 0.25fr 0.4fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     text-align: center;
+    scroll-snap-align: start;
+}
+
+#section3-header {
+    grid-area: 2 / 3 / 2 / 3;
+    text-align: start;
+    font-size: 3vw;
+    z-index: 3;
+    background: radial-gradient(#cacaca,#f5f5f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section3-p {
+    grid-area: 2 / 3 / 2 / 3;
+    font-size: 3vw;
+    z-index: 3;
+    top: 15vh;
+    position: relative;
+    text-align: start;
+    background: radial-gradient(#cacaca,#f5f5f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section4 {
+    background: linear-gradient(black,#151515);
+    display: grid;
+    grid-template-columns: 0.1fr 0fr 1fr 0.1fr;
+    grid-template-rows: 0.25fr 0.4fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+#section4-header {
+    grid-area: 2 / 3 / 2 / 3;
+    text-align: start;
+    font-size: 3vw;
+    z-index: 3;
+    background: radial-gradient(#cacaca,#f5f5f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section4-p {
+    grid-area: 2 / 3 / 2 / 3;
+    font-size: 3vw;
+    z-index: 3;
+    top: 15vh;
+    position: relative;
+    text-align: start;
+    background: radial-gradient(#cacaca,#f5f5f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section5 {
+    background: linear-gradient(#151515, black);
+    display: grid;
+    grid-template-columns: 0.1fr 0fr 1fr 0.1fr;
+    grid-template-rows: 0.25fr 0.4fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+#section5-header {
+    grid-area: 2 / 3 / 2 / 3;
+    text-align: start;
+    font-size: 3vw;
+    z-index: 3;
+    background: radial-gradient(#cacaca,#f5f5f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section5-p {
+    grid-area: 2 / 3 / 2 / 3;
+    font-size: 3vw;
+    z-index: 3;
+    top: 15vh;
+    position: relative;
+    text-align: start;
+    background: radial-gradient(#cacaca,#f5f5f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section6 {
+    background: linear-gradient(black,#151515);
+    display: grid;
+    grid-template-columns: 0.1fr 0fr 1fr 0.1fr;
+    grid-template-rows: 0.25fr 0.4fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+#section6-header {
+    grid-area: 2 / 3 / 2 / 3;
+    text-align: start;
+    font-size: 3vw;
+    z-index: 3;
+    background: radial-gradient(#cacaca,#f5f5f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section6-p {
+    grid-area: 2 / 3 / 2 / 3;
+    font-size: 3vw;
+    z-index: 3;
+    top: 15vh;
+    position: relative;
+    text-align: start;
+    background: radial-gradient(#cacaca,#f5f5f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section7 {
+    background: linear-gradient(#151515, black);
+    display: grid;
+    grid-template-columns: 0.1fr 0fr 1fr 0.1fr;
+    grid-template-rows: 0.25fr 0.4fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+#section7-header {
+    grid-area: 2 / 3 / 2 / 3;
+    text-align: start;
+    font-size: 3vw;
+    z-index: 3;
+    background: radial-gradient(#cacaca,#f5f5f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section7-p {
+    grid-area: 2 / 3 / 2 / 3;
+    font-size: 3vw;
+    z-index: 3;
+    top: 15vh;
+    position: relative;
+    text-align: start;
+    background: radial-gradient(#cacaca,#f5f5f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section8 {
+    background: linear-gradient(black,#151515);
+    display: grid;
+    grid-template-columns: 0.1fr 0fr 1fr 0.1fr;
+    grid-template-rows: 0.25fr 0.4fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+#section8-header {
+    grid-area: 2 / 3 / 2 / 3;
+    text-align: start;
+    font-size: 3vw;
+    z-index: 3;
+    background: radial-gradient(#cacaca,#f5f5f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section8-p {
+    grid-area: 2 / 3 / 2 / 3;
+    font-size: 3vw;
+    z-index: 3;
+    top: 15vh;
+    position: relative;
+    text-align: start;
+    background: radial-gradient(#cacaca,#f5f5f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section9 {
+    background: linear-gradient(#151515, black);
+    display: grid;
+    grid-template-columns: 0.1fr 0fr 1fr 0.1fr;
+    grid-template-rows: 0.25fr 0.4fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+#section9-header {
+    grid-area: 2 / 3 / 2 / 3;
+    text-align: start;
+    font-size: 3vw;
+    z-index: 3;
+    background: radial-gradient(#cacaca,#f5f5f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section9-p {
+    grid-area: 2 / 3 / 2 / 3;
+    font-size: 3vw;
+    z-index: 3;
+    top: 15vh;
+    position: relative;
+    text-align: start;
+    background: radial-gradient(#cacaca,#f5f5f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#section10 {
+    background: linear-gradient(black, #151515);
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.25fr 0.25fr 1fr;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+#section10-header {
+    grid-area: 2 / 2 / 2 / 2;
+    font-size: 3vw;
+    z-index: 3;
+    background: radial-gradient(white, lightgrey);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section10-p {
+    font-size: 3vw;
+    z-index: 3;
+    grid-area: 2 / 2 / 2 / 2;
+    position: relative;
+    text-decoration: underline dodgerblue;
+    width: fit-content;
+    height: fit-content;
 }

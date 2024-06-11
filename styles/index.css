@@ -11,6 +11,7 @@ body {
     grid-template-rows: 1fr 4fr 2fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    scroll-snap-align: start;
 }
 
 .arrow-down {
@@ -47,23 +48,23 @@ body {
 
 #section1-header {
     grid-area: 2 / 2 / 3 / 3;
-    font-size: 3vw;
+    font-size: calc(3 * var(--imgScale));
 }
 
 #section1-lid {
-    width: 10vw;
+    width: calc(10 * var(--imgScale));
     grid-area: 2 / 3 / 3 / 3;
     position: relative;
 }
 
 #section1-bottle-blue {
-    width: 25vw;
+    width: calc(25 * var(--imgScale));
     rotate: 80deg;
     position: relative;
 }
 
 #section1-bottle-red {
-    width: 25vw;
+    width: calc(25 * var(--imgScale));
     rotate: -25deg;
     position: relative;
 }
@@ -73,7 +74,7 @@ body {
 }
 
 #section1-ziplock {
-    width: 25vw;
+    width: calc(25 * var(--imgScale));
     rotate: -10deg;
     position: relative;
 }
@@ -86,10 +87,11 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     text-align: center;
+    scroll-snap-align: start;
 }
 
 #section2-header {
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 2 / 2 / 2 / 2;
     font-size: 3vw;
     z-index: 3;
     background: radial-gradient(white, lightgrey);
@@ -99,7 +101,7 @@ body {
 }
 
 #section2-p {
-    grid-area: 3 / 2 / 3 / 3;
+    grid-area: 3 / 2 / 3 / 2;
     font-size: 3vw;
     z-index: 3;
     background: radial-gradient(white, lightgrey);
@@ -128,10 +130,11 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     text-align: center;
+    scroll-snap-align: start;
 }
 
 #section3-header {
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 2 / 2 / 2 / 2;
     font-size: 3vw;
     z-index: 3;
     background: radial-gradient(white, lightgrey);
@@ -141,7 +144,7 @@ body {
 }
 
 #section3-p {
-    grid-area: 3 / 2 / 3 / 3;
+    grid-area: 3 / 2 / 3 / 2;
     font-size: 3vw;
     z-index: 3;
     background: radial-gradient(white, lightgrey);
@@ -167,10 +170,11 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     text-align: center;
+    scroll-snap-align: start;
 }
 
 #section4-header {
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 2 / 2 / 2 / 2;
     font-size: 3vw;
     z-index: 3;
     background: radial-gradient(white, lightgrey);
@@ -180,7 +184,7 @@ body {
 }
 
 #section4-p {
-    grid-area: 3 / 2 / 3 / 3;
+    grid-area: 3 / 2 / 3 / 2;
     font-size: 3vw;
     z-index: 3;
     background: radial-gradient(white, lightgrey);
@@ -195,10 +199,11 @@ body {
     grid-template-columns: 0.1fr 1fr 0.1fr;
     grid-template-rows: 0.25fr 0.25fr 1fr;
     text-align: center;
+    scroll-snap-align: start;
 }
 
 #section5-header {
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 2 / 2 / 2 / 2;
     font-size: 3vw;
     z-index: 3;
     background: radial-gradient(white, lightgrey);
@@ -210,7 +215,7 @@ body {
 .section5-p {
     font-size: 3vw;
     z-index: 3;
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 2 / 2 / 2 / 2;
     position: relative;
     text-decoration: underline dodgerblue;
     width: fit-content;

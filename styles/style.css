@@ -7,6 +7,10 @@ html, body {
     overflow-x: hidden;
 }
 
+:root {
+    --imgScale: 1vw;
+}
+
 .itim-regular {
     font-family: "Itim", cursive;
     font-weight: 400;
@@ -34,7 +38,6 @@ h1, h2, h3, h4, h5, h6, noscript {
 #container {
     height: 100vh;
     scroll-snap-type: y mandatory;
-    scroll-snap-stop: always;
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -117,6 +120,18 @@ svg {
     font-size: 1vw;
 }
 
+.text-white {
+    color: whitesmoke;
+}
+
+.text-white-grad {
+    background: radial-gradient(white, lightgrey);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration-color: whitesmoke;
+}
+
 .text-red {
     color: red;
 }
@@ -125,6 +140,7 @@ svg {
     background: linear-gradient(orangered, red);
     -webkit-background-clip: text;
     background-clip: text;
+    text-decoration-color: red;
     -webkit-text-fill-color: transparent;
 }
 
@@ -137,6 +153,7 @@ svg {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-decoration-color: limegreen;
 }
 
 .text-blue {
@@ -148,6 +165,7 @@ svg {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-decoration-color: dodgerblue;
 }
 
 .text-grey {
@@ -159,6 +177,7 @@ svg {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-decoration-color: darkgrey;
 }
 
 
@@ -171,6 +190,7 @@ svg {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-decoration-color: #bf9460;
 }
 
 .text-new {
@@ -182,6 +202,7 @@ svg {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-decoration-color: goldenrod;
 }
 
 #section-handle {
@@ -236,10 +257,12 @@ svg {
     position: relative;
     cursor: help;
     padding: 4px;
-    background: linear-gradient(to bottom, lightgrey, whitesmoke);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 0.15rem;
 }
 /* Tooltip styling */
 [data-tooltip]:before {
@@ -257,6 +280,7 @@ svg {
     min-width: 100px;
     text-align: center;
     border-radius: 4px;
+    text-wrap: nowrap;
 }
 /* Dynamic horizontal centering */
 [data-tooltip-position="top"]:before,
