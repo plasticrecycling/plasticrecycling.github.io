@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Itim&display=swap" rel="stylesheet">
 </head>
-<body onresize="document.querySelector(':root').style.setProperty('--imgScale',window.innerWidth/100+'px'); document.body.style.zoom = Math.round(window.devicePixelRatio * 80) + '%'; window.localStorage.setItem('recycle-scroll', this.scrollTop);" onload="if(window.location.pathname.split('/')[window.location.pathname.split('/').length-1] == window.localStorage.getItem('prevPage')){document.getElementById('container').scrollTo({top: window.localStorage.getItem('recycle-scroll'),left: 0,behavior: 'instant',})};">
+<body onresize="document.querySelector(':root').style.setProperty('--imgScale',window.innerWidth/100+'px'); document.body.style.zoom = Math.round(window.devicePixelRatio * 80) + '%'; window.localStorage.setItem('recycle-scroll', this.scrollTop);" onload="if(window.location.pathname.split('/')[window.location.pathname.split('/').length-1] == window.localStorage.getItem('prevPage')){document.getElementById('container').scrollTo({top: window.localStorage.getItem('recycle-scroll'),left: 0,behavior: 'instant',})} else {window.localStorage.setItem('recycle-scroll', 0); document.getElementById('container').scrollTo({top: 0,left: 0,behavior: 'instant',}); setScroll()};">
     <div id="container" onscroll="window.localStorage.setItem('recycle-scroll', this.scrollTop); setScroll()">
         <dialog open id="section0">
             <h1 id="loading-wheel" class="inter-700">↻</h1>
@@ -67,7 +67,7 @@
             <h1 id="section5-header" class="inter-700">So, where do you want to start?</h1>
             <a href="types" class="inter-700 text-blue-grad section5-p" style="top: 25vh; left: 10vw; text-align: right">Types of Plastic</a>
             <a href="how" class="inter-700 text-blue-grad section5-p" style="top: 25vh; left: 40vw; text-align: left">How plastic is recycled</a>
-            <a href="problems" class="inter-700 text-blue-grad section5-p" style="top: 50vh; left: 13.5vw;">Common problems and how to fix them</a>
+            <a href="mistakes" class="inter-700 text-blue-grad section5-p" style="top: 50vh; left: 13.5vw;">Common mistakes and how to fix them</a>
         </div>
     </div>
     <script src="scripts/script.js"></script>

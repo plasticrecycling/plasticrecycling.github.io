@@ -34,13 +34,14 @@ window.onbeforeunload = function(){
     document.body.style.opacity = '0';
     window.localStorage.setItem('recycle-scroll', document.getElementById("container").scrollTop);
     window.localStorage.setItem('prevPage',window.location.pathname.split('/')[window.location.pathname.split('/').length-1]);
+    console.log(window.location.pathname.split('/')[window.location.pathname.split('/').length-1]);
 }
 
 setScroll();
 
 function setScroll() {
-    for (let i = 0; i < document.querySelectorAll("#section-handle div").length; i++) {
-        if (window.location.pathname.split('/')[window.location.pathname.split('/').length-1] == window.localStorage.getItem('prevPage')) {
+    // if (window.location.pathname.split('/')[window.location.pathname.split('/').length-1] == window.localStorage.getItem('prevPage')) {
+        for (let i = 0; i < document.querySelectorAll("#section-handle div").length; i++) {
             if (i == Math.floor(window.localStorage.getItem('recycle-scroll') / window.innerHeight)) {
                 document.querySelectorAll("#section-handle div")[i].style.backgroundColor = 'green';
                 document.querySelectorAll("#section-handle div")[i].style.mixBlendMode = 'normal';
@@ -49,21 +50,21 @@ function setScroll() {
                 document.querySelectorAll("#section-handle div")[i].style.mixBlendMode = 'difference';
             }
         }
-    }
+    // }
 }
 
-let timer = null;
-window.addEventListener('scroll', function() {
-    if(timer !== null) {
-        clearTimeout(timer);
-    }
-
-    timer = setTimeout(function() {
-        for (let i = 0; i < document.querySelectorAll("#section-handle div").length; i++) {
-            if (i === Math.floor(JSON.parse(window.localStorage.getItem("recycle-scroll"))/window.innerHeight)) {
-                document.querySelectorAll("#section-handle div")[i].style.backgroundColor = 'grey';
-                document.querySelectorAll("#section-handle div")[i].style.currentTarget.style.mixBlendMode = 'normal';
-            }
-        }
-    }, 150);
-}, false);
+// let timer = null;
+// window.addEventListener('scroll', function() {
+//     if(timer !== null) {
+//         clearTimeout(timer);
+//     }
+//
+//     timer = setTimeout(function() {
+//         for (let i = 0; i < document.querySelectorAll("#section-handle div").length; i++) {
+//             if (i === Math.floor(JSON.parse(window.localStorage.getItem("recycle-scroll"))/window.innerHeight)) {
+//                 document.querySelectorAll("#section-handle div")[i].style.backgroundColor = 'grey';
+//                 document.querySelectorAll("#section-handle div")[i].style.currentTarget.style.mixBlendMode = 'normal';
+//             }
+//         }
+//     }, 150);
+// }, false);

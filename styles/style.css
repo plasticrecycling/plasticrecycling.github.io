@@ -5,6 +5,7 @@ html, body {
     outline: 0;
     overflow-y: hidden;
     overflow-x: hidden;
+    width: 100vw;
 }
 
 :root {
@@ -21,6 +22,16 @@ html, body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+            "slnt" 0;
+            "dlig" false;
+}
+
+.inter-900 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
     font-style: normal;
     font-variation-settings:
             "slnt" 0;
@@ -120,9 +131,25 @@ svg {
     font-size: 1vw;
 }
 
+.text-black {
+    color: black;
+    text-decoration-color: black;
+    padding: 0;
+}
+
+.text-black-grad {
+    background: radial-gradient(#151515, black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration-color: black;
+    padding: 0;
+}
+
 .text-white {
     color: whitesmoke;
     text-decoration-color: whitesmoke;
+    padding: 0;
 }
 
 .text-white-grad {
@@ -131,11 +158,13 @@ svg {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration-color: whitesmoke;
+    padding: 0;
 }
 
 .text-red {
     color: red;
     text-decoration-color: red;
+    padding: 0;
 }
 
 .text-red-grad {
@@ -144,11 +173,13 @@ svg {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration-color: red;
+    padding: 0;
 }
 
 .text-green {
     color: limegreen;
     text-decoration-color: limegreen;
+    padding: 0;
 }
 
 .text-green-grad {
@@ -157,11 +188,13 @@ svg {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration-color: limegreen;
+    padding: 0;
 }
 
 .text-blue {
     color: dodgerblue;
     text-decoration-color: dodgerblue;
+    padding: 0;
 }
 
 .text-blue-grad {
@@ -170,11 +203,13 @@ svg {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration-color: dodgerblue;
+    padding: 0;
 }
 
 .text-grey {
     color: darkgrey;
     text-decoration-color: darkgrey;
+    padding: 0;
 }
 
 .text-grey-grad {
@@ -183,11 +218,13 @@ svg {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration-color: darkgrey;
+    padding: 0;
 }
 
 .text-old {
     color: #bf9460;
     text-decoration-color: #bf9460;
+    padding: 0;
 }
 
 .text-old-grad {
@@ -196,11 +233,13 @@ svg {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration-color: #bf9460;
+    padding: 0;
 }
 
 .text-new {
     color: goldenrod;
     text-decoration-color: goldenrod;
+    padding: 0;
 }
 
 .text-new-grad {
@@ -209,6 +248,7 @@ svg {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration-color: goldenrod;
+    padding: 0;
 }
 
 #section-handle {
@@ -268,7 +308,7 @@ svg {
 [data-tooltip] {
     position: relative;
     cursor: help;
-    padding: 4px;
+    padding: 0;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
