@@ -1,0 +1,31 @@
+<svg width="1008" height="1050" viewBox="0 0 1008 1050" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_443_50)">
+<path d="M882.886 681.25L579.777 156.25C546.098 97.9167 461.902 97.9166 428.223 156.25L125.114 681.25C91.4351 739.583 133.534 812.5 200.891 812.5H807.109C874.466 812.5 916.565 739.583 882.886 681.25Z" fill="url(#paint0_linear_443_50)" stroke="url(#paint1_linear_443_50)" stroke-width="25"/>
+<path d="M558.127 168.75L861.235 693.75C885.292 735.417 855.221 787.5 807.109 787.5H200.891C152.779 787.5 122.708 735.417 146.765 693.75L449.873 168.75C473.93 127.083 534.07 127.083 558.127 168.75Z" fill="url(#paint2_linear_443_50)" stroke="black" stroke-width="25"/>
+<path d="M467.5 356.25C467.167 343.75 473 337.5 485 337.5H525C537 337.5 542.833 343.75 542.5 356.25L535.75 574.75C535.417 585.583 530 591 519.5 591H490.5C480 591 474.583 585.583 474.25 574.75L467.5 356.25ZM486 696C474.333 696 468.5 689.75 468.5 677.25V643.75C468.5 631.25 474.333 625 486 625H524C535.667 625 541.5 631.25 541.5 643.75V677.25C541.5 689.75 535.667 696 524 696H486Z" fill="black"/>
+</g>
+<defs>
+<filter id="filter0_d_443_50" x="0.741943" y="0" width="1006.52" height="925" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="50"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_443_50"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_443_50" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_443_50" x1="504" y1="50" x2="504" y2="1050" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFF068"/>
+<stop offset="1" stop-color="#F9A72B"/>
+</linearGradient>
+<linearGradient id="paint1_linear_443_50" x1="504" y1="50" x2="504" y2="1050" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFF068"/>
+<stop offset="1" stop-color="#F9A72B"/>
+</linearGradient>
+<linearGradient id="paint2_linear_443_50" x1="504" y1="50" x2="504" y2="1050" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFF068"/>
+<stop offset="1" stop-color="#F9A72B"/>
+</linearGradient>
+</defs>
+</svg>

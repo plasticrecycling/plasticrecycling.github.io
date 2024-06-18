@@ -1,0 +1,30 @@
+body {
+    background-color: #151515;
+    color: whitesmoke;
+}
+
+#section1 {
+    background: linear-gradient(#f5f5f5,#cacaca);
+    color: #151515;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 4fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    scroll-snap-align: start;
+}
+
+#section1-header {
+    grid-area: 2 / 2 / 2 / 2;
+    font-size: calc(3 * var(--imgScale));
+}
+
+#oopsies {
+    grid-area: 1 / 1 / 1 / 1;
+    position: relative;
+    top: 0;
+    left: 50vw;
+    width: 25vw;
+    z-index: 2;
+    rotate: 15deg;
+}

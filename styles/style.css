@@ -12,6 +12,24 @@ html, body {
     --imgScale: 1vw;
 }
 
+.s1-recycle-symbol {
+    grid-area: 1 / 1 / 3 / 3;
+    position: relative;
+    opacity: 75%;
+    filter: blur(0.5rem) invert(25%) sepia(200%);
+    width: 20vw;
+    z-index: 2;
+}
+
+.s1-warn-symbol {
+    grid-area: 1 / 1 / 1 / 1;
+    position: relative;
+    filter: blur(0.25rem);
+    width: 20vw;
+    z-index: 2;
+    rotate: 15deg;
+}
+
 .itim-regular {
     font-family: "Itim", cursive;
     font-weight: 400;

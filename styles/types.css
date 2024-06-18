@@ -18,15 +18,6 @@ body {
     text-align: center;
 }
 
-.s1-recycle-symbol {
-    grid-area: 1 / 1 / 3 / 3;
-    position: relative;
-    opacity: 75%;
-    filter: blur(0.5rem) invert(25%) sepia(200%);
-    width: 20vw;
-    z-index: 2;
-}
-
 #section2 {
     background: linear-gradient(#cacaca 15%,black,#151515);
     display: grid;
