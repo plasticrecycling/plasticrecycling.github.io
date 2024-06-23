@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <title>Recycling</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="shortcut icon" href="img/BottleBlue.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/Bin.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Itim&display=swap" rel="stylesheet">
 </head>
-<body onresize="document.querySelector(':root').style.setProperty('--imgScale',window.innerWidth/100+'px'); document.body.style.zoom = Math.round(window.devicePixelRatio * 80) + '%'; window.localStorage.setItem('recycle-scroll', this.scrollTop);" onload="if(window.location.pathname.split('/')[window.location.pathname.split('/').length-1] == window.localStorage.getItem('prevPage')){document.getElementById('container').scrollTo({top: window.localStorage.getItem('recycle-scroll'),left: 0,behavior: 'instant',})} else {window.localStorage.setItem('recycle-scroll', 0); document.getElementById('container').scrollTo({top: 0,left: 0,behavior: 'instant',}); setScroll()};">
+<body onresize="document.body.style.zoom = Math.round(window.devicePixelRatio * 80) + '%'; window.localStorage.setItem('recycle-scroll', this.scrollTop);" onload="if(window.location.pathname.split('/')[window.location.pathname.split('/').length-1] == window.localStorage.getItem('prevPage')){document.getElementById('container').scrollTo({top: window.localStorage.getItem('recycle-scroll'),left: 0,behavior: 'instant',})} else {window.localStorage.setItem('recycle-scroll', 0); document.getElementById('container').scrollTo({top: 0,left: 0,behavior: 'instant',}); setScroll()};">
     <div id="container" onscroll="window.localStorage.setItem('recycle-scroll', this.scrollTop); setScroll()">
         <dialog open id="section0">
             <h1 id="loading-wheel" class="inter-700">↻</h1>

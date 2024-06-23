@@ -1,11 +1,3 @@
-if (window.innerWidth/100 > window.innerHeight/100) {
-    document.querySelector(':root').style.setProperty('--imgScale',window.innerWidth/100+"px");
-} else {
-    document.querySelector(':root').style.setProperty('--imgScale',window.innerHeight/100+"px");
-}
-
-document.body.style.zoom = Math.round(window.devicePixelRatio * 80) + '%';
-
 const delay = ms => new Promise(res => setTimeout(res, ms));
 let loadRot = Math.floor(Math.random()*360);
 document.getElementById("loading-wheel").style.rotate = loadRot+"deg";
@@ -44,10 +36,8 @@ function setScroll() {
         for (let i = 0; i < document.querySelectorAll("#section-handle div").length; i++) {
             if (i == Math.floor(window.localStorage.getItem('recycle-scroll') / window.innerHeight)) {
                 document.querySelectorAll("#section-handle div")[i].style.backgroundColor = 'green';
-                document.querySelectorAll("#section-handle div")[i].style.mixBlendMode = 'normal';
             } else {
                 document.querySelectorAll("#section-handle div")[i].style.backgroundColor = 'lightgrey';
-                document.querySelectorAll("#section-handle div")[i].style.mixBlendMode = 'difference';
             }
         }
     // }

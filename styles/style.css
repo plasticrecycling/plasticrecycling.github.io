@@ -8,28 +8,6 @@ html, body {
     width: 100vw;
 }
 
-:root {
-    --imgScale: 1vw;
-}
-
-.s1-recycle-symbol {
-    grid-area: 1 / 1 / 3 / 3;
-    position: relative;
-    opacity: 75%;
-    filter: blur(0.5rem) invert(25%) sepia(200%);
-    width: 20vw;
-    z-index: 2;
-}
-
-.s1-warn-symbol {
-    grid-area: 1 / 1 / 1 / 1;
-    position: relative;
-    filter: blur(0.25rem);
-    width: 20vw;
-    z-index: 2;
-    rotate: 15deg;
-}
-
 .itim-regular {
     font-family: "Itim", cursive;
     font-weight: 400;
@@ -278,6 +256,8 @@ svg {
     display: flex;
     align-items: center;
     justify-content: center;
+    filter: grayscale(1);
+    z-index: 998;
 }
 
 #section-handle div {
@@ -289,15 +269,12 @@ svg {
     margin: 0 1vh 0 1vh;
     box-shadow: rgba(21, 21, 21, 0.25) 0 0 1rem;
     cursor: pointer;
-    z-index: 10;
     transition: background-color 200ms ease-out;
-    isolation: isolate;
-    mix-blend-mode: difference;
+    opacity: 75%;
 }
 
 #section-handle div:first-child {
-     background-color: green;
-    mix-blend-mode: normal;
+    background-color: green;
 }
 
 @keyframes scale {
