@@ -60,7 +60,7 @@ body {
 
 #section2-header {
     grid-area: 2 / 2 / 3 / 3;
-    font-size: 3vw;
+    font-size: 3rem;
     z-index: 3;
     background: radial-gradient(white, lightgrey);
     -webkit-background-clip: text;
@@ -70,7 +70,7 @@ body {
 
 #section2-p {
     grid-area: 3 / 2 / 3 / 3;
-    font-size: 3vw;
+    font-size: 3rem;
     z-index: 3;
     background: radial-gradient(white, lightgrey);
     -webkit-background-clip: text;
@@ -97,7 +97,7 @@ body {
 
 #section3-header {
     grid-area: 2 / 3 / 2 / 3;
-    font-size: 3vw;
+    font-size: 3rem;
     z-index: 3;
     background: radial-gradient(#cacaca,#f5f5f5);
     -webkit-background-clip: text;
@@ -107,7 +107,7 @@ body {
 
 #section3-p {
     grid-area: 2 / 3 / 2 / 3;
-    font-size: 3vw;
+    font-size: 2rem;
     z-index: 3;
     top: 15vh;
     position: relative;
@@ -131,7 +131,7 @@ body {
 #section4-header {
     grid-area: 2 / 3 / 2 / 3;
     
-    font-size: 3vw;
+    font-size: 3rem;
     z-index: 3;
     background: radial-gradient(#cacaca,#f5f5f5);
     -webkit-background-clip: text;
@@ -141,7 +141,7 @@ body {
 
 #section4-p {
     grid-area: 2 / 3 / 2 / 3;
-    font-size: 3vw;
+    font-size: 3rem;
     z-index: 3;
     top: 15vh;
     position: relative;
@@ -165,7 +165,7 @@ body {
 
 #section5-header {
     grid-area: 2 / 3 / 2 / 3;
-    font-size: 3vw;
+    font-size: 3rem;
     z-index: 3;
     background: radial-gradient(#cacaca,#f5f5f5);
     -webkit-background-clip: text;
@@ -175,7 +175,7 @@ body {
 
 #section5-p {
     grid-area: 2 / 3 / 2 / 3;
-    font-size: 3vw;
+    font-size: 3rem;
     z-index: 3;
     top: 15vh;
     position: relative;
@@ -198,7 +198,7 @@ body {
 
 #section6-header {
     grid-area: 2 / 3 / 2 / 3;
-    font-size: 3vw;
+    font-size: 3rem;
     z-index: 3;
     background: radial-gradient(#cacaca,#f5f5f5);
     -webkit-background-clip: text;
@@ -208,7 +208,7 @@ body {
 
 #section6-p {
     grid-area: 2 / 3 / 2 / 3;
-    font-size: 3vw;
+    font-size: 3rem;
     z-index: 3;
     top: 15vh;
     position: relative;
@@ -229,7 +229,7 @@ body {
 
 #section7-header {
     grid-area: 2 / 2 / 2 / 2;
-    font-size: 3vw;
+    font-size: 3rem;
     z-index: 3;
     background: radial-gradient(white, lightgrey);
     -webkit-background-clip: text;
@@ -238,7 +238,7 @@ body {
 }
 
 .section7-p {
-    font-size: 3vw;
+    font-size: 3rem;
     z-index: 3;
     grid-area: 2 / 2 / 2 / 2;
     position: relative;
